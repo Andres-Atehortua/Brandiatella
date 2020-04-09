@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restaurante</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row my-4">
+          <div class="col-12 text-center">
+            <img class="logo" src="./img/logo2.png" alt="Brendiatella Logo" />
+            <br />
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white border-top border-bottom sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo1.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link lead" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lead" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle lead"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Redes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item lead"
+                  href="https://www.instagram.com/sirlopezshakur/"
+                  target="_blank"
+                >
+                  <img
+                    class="instagram mr-2"
+                    src="./img/instagram.svg"
+                    alt="Instagram Logo"
+                  />Instagram</a
+                >
+                <a
+                  class="dropdown-item lead"
+                  href="https://www.linkedin.com/in/andres-lopez-atehortua/"
+                  target="_blank"
+                >
+                  <img
+                    class="instagram mr-2"
+                    src="./img/linkedin.svg"
+                    alt="Instagram Logo"
+                  />Linkedin</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 my-4">
+              <!-- Empieza carousel -->
+              <div
+                id="carouselRestaurant"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselRestaurant"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carouselRestaurant" data-slide-to="1"></li>
+                  <li data-target="#carouselRestaurant" data-slide-to="2"></li>
+                  <li data-target="#carouselRestaurant" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner rounded-lg">
+                  <div class="carousel-item active" data-interval="3500">
+                    <img
+                      src="./img/carousel1.jpg"
+                      class="d-block w-100"
+                      alt="Restaurante 1"
+                    />
+                  </div>
+                  <div class="carousel-item" data-interval="3500">
+                    <img
+                      src="./img/carousel2.jpg"
+                      class="d-block w-100"
+                      alt="Restaurante 2"
+                    />
+                  </div>
+                  <div class="carousel-item" data-interval="3500">
+                    <img
+                      src="./img/carousel3.jpg"
+                      class="d-block w-100"
+                      alt="Restaurante 3"
+                    />
+                  </div>
+                  <div class="carousel-item" data-interval="3500">
+                    <img
+                      src="./img/carousel4.jpg"
+                      class="d-block w-100"
+                      alt="Restaurante 4"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselRestaurant"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselRestaurant"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Siguiente</span>
+                </a>
+              </div>
+              <!-- Termina el carousel -->
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12">
+              <!-- Comienzan las cards -->
+              <div class="card-columns">
+                <div class="card">
+                  <img
+                    src="./img/4.png"
+                    class="card-img-top"
+                    alt="Foto comida"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Lorem ipsum dolor sit.
+                    </h5>
+                    <hr />
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum voluptate temporibus cupiditate esse totam molestiae
+                      quis in! Porro, deserunt molestiae?
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./img/5.png"
+                    class="card-img-top"
+                    alt="Foto comida"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Lorem ipsum dolor sit.
+                    </h5>
+                    <hr />
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum voluptate temporibus cupiditate esse totam molestiae
+                      quis in! Porro, deserunt molestiae?
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./img/6.png"
+                    class="card-img-top"
+                    alt="Foto comida"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Lorem ipsum dolor sit.
+                    </h5>
+                    <hr />
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum voluptate temporibus cupiditate esse totam molestiae
+                      quis in! Porro, deserunt molestiae?
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./img/7.png"
+                    class="card-img-top"
+                    alt="Foto comida"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Lorem ipsum dolor sit.
+                    </h5>
+                    <hr />
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum voluptate temporibus cupiditate esse totam molestiae
+                      quis in! Porro, deserunt molestiae?
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./img/1.png"
+                    class="card-img-top"
+                    alt="Foto comida"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Lorem ipsum dolor sit.
+                    </h5>
+                    <hr />
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum voluptate temporibus cupiditate esse totam molestiae
+                      quis in! Porro, deserunt molestiae?
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./img/2.png"
+                    class="card-img-top"
+                    alt="Foto comida"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Lorem ipsum dolor sit.
+                    </h5>
+                    <hr />
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum voluptate temporibus cupiditate esse totam molestiae
+                      quis in! Porro, deserunt molestiae?
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./img/3.png"
+                    class="card-img-top"
+                    alt="Foto comida"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Lorem ipsum dolor sit.
+                    </h5>
+                    <hr />
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum voluptate temporibus cupiditate esse totam molestiae
+                      quis in! Porro, deserunt molestiae?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Terminan las cards -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <!-- Empieza Jumbotron -->
+              <div class="jumbotron mt-5 text-center">
+                <h1 class="display-4 text-center">¡2x1 Todos los Viernes!</h1>
+                <p class="lead mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  placeat nisi a porro libero, commodi eligendi consectetur
+                  tempora omnis provident enim ad voluptate animi quia
+                  voluptatum quae itaque incidunt aliquid asperiores.
+                  Consequuntur enim ab ipsa aspernatur fugit, suscipit magnam
+                  voluptatem id molestias, asperiores corporis? Enim facilis
+                  quae recusandae sunt perferendis. Fugiat praesentium delectus
+                  magni numquam veritatis expedita omnis eos. Error!
+                </p>
+                <hr class="my-4" />
+                <p>Disponibilidad sujeta a disponibilidad del restaurante.</p>
+                <a class="btn btn-outline-info btn-lg" href="#" role="button"
+                  >Ver condiciones</a
+                >
+              </div>
+              <!-- Termina Jumbotron -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-12 text-center">
+              <h3 class="display-4 text-white p-4">Contáctanos</h3>
+            </div>
+            <div
+              class="col-12 col-md-8 offset-md-2 bg-white-custom p-5 rounded-lg"
+            >
+              <form>
+                <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control shadow-sm"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control shadow-sm"
+                    name="lastName"
+                    id="lastName"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo</label>
+                  <input
+                    type="email"
+                    class="form-control shadow-sm"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-info btn-block">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="position-fixed btn-whatsapp">
+      <a href="https://wa.me/34608142197" target="_blank">
+        <img
+          class="img-fluid logo-whatsapp"
+          src="./img/whatsapp.png"
+          alt="Whatsapp logo"
+        />
+      </a>
+    </div>
+
+    <!-- jQuery primero, luego Popper.js, por último Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
