@@ -1,5 +1,5 @@
 body {
-    background-image: url('./img/back.jpg');
+    background-image: url('../img/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 .contact-form {
-    background: url('./img/form.jpg') center center/cover;
+    background: url('../img/form.jpg') center center/cover;
 }
 
 .bg-white-custom {
