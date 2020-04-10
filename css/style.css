@@ -1,48 +1,48 @@
 body {
-    background-image: url('../img/back.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .logo {
-    width: 280px;
+  width: 280px;
 }
 
-.instagram {
-    width: 25px;
+.icons {
+  width: 25px;
 }
 
 .carousel-item {
-    height: 500px;
+  height: 500px;
 }
 
 .carousel-item img {
-    height: 500px;
+  height: 500px;
 }
 
 .contact-form {
-    background: url('../img/form.jpg') center center/cover;
+  background: url("../img/form.jpg") center center/cover;
 }
 
 .bg-white-custom {
-    background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .btn-whatsapp {
-    bottom: 20px;
-    right: 20px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .logo-whatsapp {
-    width: 60px;
+  width: 60px;
 }
 
 @media (max-width: 767px) {
-    .carousel-item {
-        height: 300px;
-    }
-    .carousel-item img {
-        height: 300px;
-    }
+  .carousel-item {
+    height: 300px;
+  }
+  .carousel-item img {
+    height: 300px;
+  }
 }
